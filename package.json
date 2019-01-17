@@ -5,8 +5,8 @@
   "dependencies": {
     "@types/react-intl": "^2.3.14",
     "@types/react-redux": "^6.0.11",
-    "react": "^16.7.0-alpha.2",
-    "react-dom": "^16.7.0-alpha.2",
+    "react": "16.7.0-alpha.2",
+    "react-dom": "16.7.0-alpha.2",
     "react-intl": "^2.7.2",
     "react-redux": "^6.0.0",
     "react-scripts-ts": "^4.0.8",
