@@ -1,0 +1,77 @@
+{
+  "name": "lfis-ui-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/react-intl": "^2.3.14",
+    "@types/react-redux": "^6.0.11",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "react-intl": "^2.7.2",
+    "react-redux": "^6.0.0",
+    "react-scripts-ts": "^4.0.8",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "npm run extract:messages && npm run manage:translations && npm run build:webpack",
+    "build:webpack": "react-scripts-ts build",
+    "test:end-to-end": "jest --runInBand --env=node",
+    "test:end-to-end:bash": "winpty npm.cmd run test:end-to-end",
+    "test:unit": "react-scripts-ts test --env=jsdom",
+    "test:unit:bash": "winpty npm.cmd test:unit",
+    "prettier": "prettier --write \"src/**/*.{ts,tsx,json,css}\"",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --ignore-pattern src/registerServiceWorker.ts",
+    "licenses:production": "license-checker --production && license-checker --production --summary",
+    "licenses:development": "license-checker --development && license-checker --development --summary",
+    "---i18n stuff---": "",
+    "extract:messages": "ts-node scripts/extract-messages \"src/**/*.tsx\" src/i18n/extracted",
+    "manage:translations": "ts-node scripts/translationRunner.ts src/i18n/extracted src/i18n/locales"
+  },
+  "devDependencies": {
+    "@types/expect-puppeteer": "^3.3.0",
+    "@types/jest": "^23.3.11",
+    "@types/node": "^10.12.18",
+    "@types/puppeteer": "^1.11.1",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-test-renderer": "^16.0.3",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-jasmine": "^2.10.1",
+    "eslint-plugin-react": "^7.12.0",
+    "eslint-plugin-typescript": "^0.14.0",
+    "expect-puppeteer": "^3.5.1",
+    "glob-promise": "^3.4.0",
+    "jest": "^23.6.0",
+    "license-checker": "^24.1.0",
+    "prettier": "^1.15.3",
+    "puppeteer": "^1.11.0",
+    "react-intl-translations-manager": "^5.0.3",
+    "react-test-renderer": "^16.7.0",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.1",
+    "typescript-eslint-parser": "^21.0.2",
+    "typescript-react-intl": "^0.3.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "--jest-configuration--": "--used-for-end-to-end-tests--",
+  "jest": {
+    "preset": "ts-jest",
+    "setupTestFrameworkScriptFile": "expect-puppeteer",
+    "testEnvironment": "node",
+    "testMatch": [
+      "<rootDir>/src/**/*.e2etest.ts"
+    ]
+  },
+  "proxy": "http://localhost/"
+}

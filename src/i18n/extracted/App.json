@@ -1,0 +1,12 @@
+[
+  {
+    "id": "app.home.greeting",
+    "description": "Message to greet users.",
+    "defaultMessage": "Welcome to {name} proof of concept!"
+  },
+  {
+    "id": "app.home.intro",
+    "description": "Instructions how to get started.",
+    "defaultMessage": "Choose whether to start filling out a fresh new form or load values from a previously saved one."
+  }
+]

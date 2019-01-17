@@ -1,0 +1,42 @@
+{
+  "env": {
+    "es6": true,
+    "jasmine": true,
+    "node": true
+  },
+  "parser": "typescript-eslint-parser",
+  "plugins": ["jasmine", "react", "typescript"],
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "plugin:jasmine/recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts", ".tsx"]
+      }
+    },
+    "react": { "version": "16.7" }
+  },
+  "globals": {
+    "document": true,
+    "fetch": true,
+    "localStorage": true,
+    "URL": true,
+    "window": true
+  },
+  "rules": {
+    "comma-dangle": ["error", "never"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/*.test.ts", "**/*.test.tsx", "**/*.e2etest.ts"] }
+    ],
+    "jasmine/new-line-before-expect": 0,
+    "linebreak-style": ["error", "windows"],
+    "--no-unused-vars--": "will be fixed in eslint-plugin-typescript 1.0.0",
+    "typescript/no-unused-vars": "error"
+  }
+}

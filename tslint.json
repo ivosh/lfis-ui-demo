@@ -1,0 +1,14 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "---TODO---": "JSON files will be excluded automatically in some future tslint version.",
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js",
+      "*.json",
+      "**/*.json"
+    ]
+  },
+  "rules": { "jsx-no-lambda": false, "object-literal-sort-keys": false }
+}

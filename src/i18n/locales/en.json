@@ -1,0 +1,12 @@
+{
+  "app.home.greeting": "Welcome to {name} proof of concept!",
+  "app.home.intro": "Choose whether to start filling out a fresh new form or load values from a previously saved one.",
+  "form.login.error.code": "Error code",
+  "form.login.error.detail": "Error detail",
+  "form.login.failed": "Login failed!",
+  "form.login.password.label": "Password",
+  "form.login.password.placeholder": "Type: 12345",
+  "form.login.submit": "Login",
+  "form.login.username.label": "Username",
+  "form.login.username.placeholder": "Type: admin"
+}

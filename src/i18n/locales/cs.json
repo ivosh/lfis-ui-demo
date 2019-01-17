@@ -1,0 +1,12 @@
+{
+  "app.home.greeting": "{name} tě vítá!",
+  "app.home.intro": "Choose whether to start filling out a fresh new form or load values from a previously saved one.",
+  "form.login.error.code": "Chybový kód",
+  "form.login.error.detail": "Detail chyby",
+  "form.login.failed": "Přihlášení selhalo!",
+  "form.login.password.label": "Heslo",
+  "form.login.password.placeholder": "Napiš: 12345",
+  "form.login.submit": "Přihlásit",
+  "form.login.username.label": "Jméno",
+  "form.login.username.placeholder": "Napiš: admin"
+}
